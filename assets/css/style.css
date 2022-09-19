@@ -81,6 +81,10 @@ padding-top: 20px;
     display: block;
     padding-top: 10px;
 }
+#footer img {
+    width:30px;
+    height:30px;
+}
 #footer ul li {
     display: inline-block;
 }
