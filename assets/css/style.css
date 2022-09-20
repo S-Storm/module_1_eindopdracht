@@ -71,9 +71,9 @@ padding-top: 20px;
 }
 
 #test1 {
-    width: 50px;
-    height: 50px;
-    background-color: red;
+    width: 10px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
     position: relative;
     animation-name: testanimation1;
     animation-duration: 4s;
@@ -82,28 +82,32 @@ padding-top: 20px;
 }
 
 @keyframes testanimation1 {
-  0%   {background-color: red; left:0px; top:0px;}
-  25%  {background-color: hotpink; left:150px; top:300px;}
-  50%  {background-color: white; left:300px; top:0px;}
-  100% {background-color: rgb(70, 234, 33); left:0px; top:0px;}
+  0%   {left:0px; top:0px;}
+  20%  {transform: rotate(360deg); left:-20px; top:300px;}
+  40%  {transform: rotate(0deg); left:500px; top:500px;}
+  60% {transform: rotate(360deg); left:1000px; top:100px;}
+  80% {transform: rotate(180deg); left:600px; top:0px;}
+  100% {transform: rotate(0deg); left:0px; top:0px;}
 }
 
 #test2 {
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     background-color: red;
     position: relative;
     animation-name: testanimation2;
     animation-duration: 4s;
+    animation-direction: normal;
     animation-iteration-count: infinite;
 
 }
 
 @keyframes testanimation2 {
-    0%   {background-color: red; left:400px; top:-50px;}
-    25%  {background-color: hotpink; left:550px; top:250px;}
-    50%  {background-color: white; left:700px; top:-50px;}
-    100% {background-color: rgb(70, 234, 33); left:400px; top:-50px;}
+    0%   {left:10px; top:-50px;}
+    25%  {left:300px; top:-80px;}
+    50%  {left:600px; top:300px;}
+    100% {left:10px; top:-50px;}
   }
 
 #footer {
