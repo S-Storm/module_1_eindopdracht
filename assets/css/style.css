@@ -76,9 +76,18 @@ padding-top: 20px;
     background-color: rgb(255, 255, 255);
     position: relative;
     animation-name: testanimation1, rotation;
-    animation-duration: 4s, 0.5s;
+    animation-duration: 4s, 0.01s;
     animation-iteration-count: infinite;
 
+}
+
+.sphere1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 70%;
+    left: 100px;
+    background-color: hotpink;
+    position: relative;
 }
 
 @keyframes testanimation1 {
@@ -105,8 +114,8 @@ padding-top: 20px;
     border-radius: 50%;
     background-image: linear-gradient(red, hotpink, yellow);
     position: relative;
-    animation-name: testanimation2, rotation, growth;
-    animation-duration: 4s, 3s, 4s;
+    animation-name: testanimation2, growth;
+    animation-duration: 4s, 4s;
     animation-direction: normal;
     animation-iteration-count: infinite;
 
@@ -126,6 +135,63 @@ padding-top: 20px;
     50% {transform: scale(5)}
     100% {transform: scale(1)}
   }
+
+  #test3 {
+    position:relative;
+    top: -80px;
+    height:281px;
+    width:450px;
+    margin:0 auto;
+
+}
+
+#test3 img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #test3 img.transparent {
+    opacity:0;
+    }
+
+    @keyframes fade {
+        0% {
+        opacity:1;
+      }
+      45% {
+      opacity:1;
+      }
+      55% {
+      opacity:0;
+      }
+      100% {
+      opacity:0;
+      }
+      }
+      
+      #test3 img.top {
+      animation-name: fade;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-duration: 10s;
+      animation-direction: alternate;
+      }
+
+#test4 {
+    background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/11/01/Wrinkled-Paper-Texture-Graphics-6403262-1.png");
+    max-height: 300px;
+    width: 100px;
+    background-repeat: repeat-x;
+    font-family:"Vladimir script", "Euphemia", "Comic sans";
+    color: #000000;
+    font-size: 15px;
+    
+}
+
 
 #footer {
     background-color: #101419;
